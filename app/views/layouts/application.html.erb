@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title><%= yield(:title) %></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<%= javascript_include_tag :all %>
+	<%= stylesheet_link_tag 'application' %>
+	<%= yield :head %>
+</head>
+
+<body>
+	<ol id="menu">
+		<li><%= link_to "Running", jobs_path %></li>
+		<li><%= link_to "Scheduled", scheduled_jobs_path %></li>
+		<li><%= link_to "Rescheduled", rescheduled_jobs_path %></li>
+		<li><%= link_to "Failed", failed_jobs_path %></li>
+	</ol>
+	
+	<div id="contents">
+		<h1><%= yield(:title) %></h1>
+
+		<%= yield %>
+	</div>
+	
+</body>
+
+</html>

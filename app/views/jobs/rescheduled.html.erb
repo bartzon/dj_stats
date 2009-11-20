@@ -1,0 +1,7 @@
+<% title "Rescheduled jobs" %>
+
+<% if @jobs.any? %>
+	<%= render :partial => "jobs" %>
+<% else %>
+	No rescheduled jobs found.
+<% end %>

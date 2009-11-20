@@ -1,0 +1,73 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	line-height:1.5em;
+	font-family:"Helvetica Neue", Helvetica, Arial;
+	font-size:0.9em;
+}
+
+a
+{
+	font-weight:bold;
+}
+
+ol#menu
+{
+	background-color:#000;
+	overflow:auto;
+	font-size:110%;
+	list-style:none;
+	padding:0 1em;
+}
+
+ol#menu li
+{
+	float:left;
+	padding:0.75em 2em 0.5em 2em;
+}
+
+ol#menu li a
+{
+	color:#FFF;
+	text-decoration:none;
+}
+
+div#contents
+{
+	padding:2em 3em;
+}
+
+h1
+{
+	margin-bottom:1em;
+}
+
+table.jobs
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:1em 0;
+}
+
+table.jobs th, table.jobs td
+{
+	border:1px solid #DDD;
+	padding:3px 10px;
+}
+
+table.jobs th
+{
+	background-color:#F0F0F0;
+	color:#666;
+}
+
+table.jobs td
+{
+	font-family:Monaco, Arial, sans-serif;
+	font-size:90%;
+}

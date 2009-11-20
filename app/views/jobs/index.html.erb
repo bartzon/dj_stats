@@ -1,0 +1,7 @@
+<% title "Running jobs" %>
+
+<% if @jobs.any? %>
+	<%= render :partial => "jobs" %>
+<% else %>
+	No running jobs found.
+<% end %>

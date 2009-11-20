@@ -1,0 +1,17 @@
+<% content_tag_for :tr, job do %>
+	<td>
+		<%= job.application.name %>
+	</td>
+	<td>
+		<%= job.name %>
+	</td>
+	<td style="width:1px">
+		<%= job.args.any? ? job.args : "[]" %>
+	</td>
+	<td style="width:1px; text-align:center">
+		<%= job.attempts > 0 ? link_to(job.attempts, error_message_job_path(job), :popup => true) : 0 %>
+	</td>
+	<td style="width:230px">
+		<span class="timestamp"><%= job.started_at.strftime("%B %d, %Y %H:%M:%S") if job.started_at %></span>
+	</td>
+<% end %>
